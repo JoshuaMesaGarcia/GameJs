@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Try to remember!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Css/Plantilla.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-4 sidenav" id="informacion">
+                <h1><strong>Welcome!</strong></h1>
+                <h2><strong>Instructions: </strong> </h2>
+                <h3>For play, choose one difficulty mode.<br />Once you choose it, a start button will appear, that start a countdown<br />
+      Stay alert. A box will be coloured by white, if you click on it, another box will be coloured by white.<br />
+      You have to remember every box that colored by white in the same order that appeared, because you have to click on it in the same order, to win or go to the next difficulty mode.<br/>
+      If you lose, you start again.</h3>
+                <h1>Do you accept the challenge?</h1>
+                <button type="button" id="indexPage" name="button" class="button button5" onclick="goIndex()">Introduce a new User</button>
+            </div>
+            <div class="container-fluid">
+                <div class="col-sm-7 sidenav">
+                    <div class="row content" id="modoJuego">
+                        <button id="modoFacil" class="button button1" onclick="crearTablero(10)">Easy</button>
+                        <button id="modoMedio" class="button button2" onclick="crearTablero(12)">Medium</button>
+                        <button id="modoDificil" class="button button3" onclick="crearTablero(15)">Hard</button>
+                        <div id="cajaPerder"></div>
+                    </div>
+                    <div id="tableroJuego"></div>
+                </div>
+                <div class="col-sm-1 sidenav" id="tablaPuntuaciones"></div>
+                <script type="text/javascript" src="Js/Juego.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
