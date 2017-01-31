@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="Css/Index.css">
+</head>
+
+<body>
+    <p class="texto">Registration</p>
+    <div class="Registro" id="formUsu">
+        <form action="JsGame.html" method="post">
+            <span class="fontawesome-user"></span><input type="text" id="nUsu" required placeholder="Username" autocomplete="off">
+            <label for="avatar">Choose Your Avatar:</label>
+            <div id="selectAvatar">
+                <img src="Images/back.png" width="50px" height="50px" onclick="NameSpace.Avatares.prototype.back()">
+                <img src="Images/1.jpg" width="100px" height="120px" class="image" id="1">
+                <img src="Images/next.png" width="50px" height="50px" onclick="NameSpace.Avatares.prototype.next()">
+            </div>
+            <input type="submit" onclick="NameSpace.Avatares.prototype.validar()" value="Register" title="Registra tu cuenta">
+        </form>
+    </div>
+    <script src="Js/validacion.js"></script>
+</body>
+
+</html>
