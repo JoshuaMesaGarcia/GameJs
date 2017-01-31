@@ -1,0 +1,136 @@
+body{
+  background: #1b1e24;
+}
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {height: auto};
+
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: white;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  height: 38px;
+  color: white;
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height: auto;}
+}
+
+table{
+  border-radius: 10px;
+}
+
+h1,h2{
+  text-align: center;
+}
+
+#modoJuego{
+  margin: 0 auto;
+  width: 50%;
+}
+
+#tableroJuego{
+  margin: 0 auto;
+  width: 45%;
+  padding-top: 10px;
+}
+
+#informacion{
+  color: #9f8a4e;
+}
+
+#tablaPuntuaciones{
+    color: #DCDCDC;
+    right: 7%;
+    text-align: center;
+}
+
+img{
+  right: 0.2%;
+  position: fixed;
+}
+
+h3{
+  color: #DCDCDC;
+}
+/*Css para todos los botones*/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+background-color: white;
+color: black;
+border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+background-color: #4CAF50;
+color: white;
+}
+
+.button2 {
+background-color: white;
+color: black;
+border: 2px solid orange;
+}
+
+.button2:hover {
+background-color: orange;
+color: white;
+}
+
+.button3 {
+background-color: white;
+color: black;
+border: 2px solid #f44336;
+}
+
+.button3:hover {
+background-color: #f44336;
+color: white;
+}
+
+.button4 {
+background-color: white;
+color: black;
+border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+background-color: white;
+color: black;
+border: 2px solid #555555;
+margin-left: 20%;
+}
+
+.button5:hover {
+background-color: #555555;
+color: white;
